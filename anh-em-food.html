@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giới thiệu Món Ăn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: url('abstract-organic-pattern-design-background_1240223-842.avif') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      padding-top: 70px;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 240, 230, 0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #c0392b;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #c0392b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 240, 230, 0.95);
+      border-radius: 12px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      font-size: 24px;
+      color: #c0392b;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .item {
+      margin-bottom: 24px;
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .item h3 {
+      margin: 10px 0 5px;
+      color: #d35400;
+    }
+    .item p {
+      margin: 4px 0;
+    }
+    .order-link {
+      display: inline-block;
+      background-color: #c0392b;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+    .order-link:hover {
+      background-color: #a93226;
+    }
+    .combo-box {
+      border: 2px dashed #c0392b;
+      padding: 20px;
+      border-radius: 16px;
+      background-color: #fff0eb;
+      margin-top: 40px;
+    }
+    .combo-box h2 {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #c0392b;
+    }
+    .combo-item {
+      margin-bottom: 20px;
+    }
+    .combo-item h3 {
+      margin-bottom: 8px;
+    }
+    .combo-item ul {
+      padding-left: 20px;
+    }
+    .floating-order-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #e74c3c;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .floating-order-btn:hover {
+      background: #c0392b;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+      gap: 20px;
+    }
+    .social-icons a {
+      font-size: 24px;
+      color: #c0392b;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #e74c3c;
+    }
+    .combo-image {
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 16px;
+    }
+    .note {
+      background-color: #f9e3e3;
+      border-left: 5px solid #c0392b;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 30px;
+      font-size: 16px;
+    }
+    .menu-image {
+      width: 100%;
+      border-radius: 16px;
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Anh Em Food</div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#combo">Combo</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJxbtZCgs3G2RXejGWls3gNIzcb0f3Bm8N0bZR-5hkrLspLA/viewform?usp=dialog" target="_blank">Đặt hàng</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section" id="menu">
+      <h2>Menu Món Ăn</h2>
+      <p style="text-align: center;">Mì trộn indomie trứng - Giá: 28.000đ/phần</p>
+      <p style="text-align: center;">Mì trộn Indomie Xúc xích - Giá: 30.000đ/phần</p>
+      <p style="text-align: center;">Nước uống: Size M (350ml): 10.000đ | Size L (500ml): 15.000đ</p>
+      <p style="text-align: center;">Topping thêm: Trứng +7.000đ | Xúc xích +12.000đ</p>
+      <img src="Ảnh chụp màn hình 2025-06-10 185222.png" alt="Menu món ăn" class="menu-image" />
+    </div>
+
+    <div class="combo-box" id="combo">
+      <h2>COMBO ƯU ĐÃI</h2>
+
+      <div class="combo-item">
+        <h3>Combo 1 <span style="color:red">🔥 35.000đ</span></h3>
+        <img src="z6697722786846_6df1cd55036b7b303f50181d4d785179.jpg" alt="Combo 1" class="combo-image" />
+        <ul>
+          <li>Mì Indomie Trứng / Xúc xích</li>
+          <li>1 Ly nước size M tuỳ chọn</li>
+        </ul>
+      </div>
+
+      <div class="combo-item">
+        <h3>Combo 2 - 50.000đ</h3>
+        <img src="z6697810368969_b0bdbaedd5abd6b4e74ca0f04ebafa74.jpg" alt="Combo 2" class="combo-image" />
+        <ul>
+          <li>Mì Indomie 2 Trứng</li>
+          <li>Tặng kèm 1 Xúc xích</li>
+          <li>1 Ly nước size L tuỳ chọn</li>
+        </ul>
+      </div>
+
+      <div class="combo-item">
+        <h3>Combo 3 - 120.000đ</h3>
+        <img src="z6697880131457_529f5829162fd9038f2ff732c1f88203.jpg" alt="Combo 3" class="combo-image" />
+        <ul>
+          <li>3 Phần Mì Indomie Trứng / Xúc xích</li>
+          <li>3 Ly nước size L</li>
+          <li>Miễn phí khi thêm 1 vắt mì</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Lưu ý:</strong> Quý khách vui lòng đặt trước một ngày để bếp có thể chuẩn bị một cách chu đáo và đảm bảo chất lượng. Nếu có nhu cầu đặt ngay, vui lòng nhấn vào liên kết trang Facebook của AnhEmfood.
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/share/g/1AyJS3VtTB/" target="_blank"><i class="fab fa-facebook"></i></a>
+  </div>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJxbtZCgs3G2RXejGWls3gNIzcb0f3Bm8N0bZR-5hkrLspLA/viewform?usp=dialog" target="_blank" class="floating-order-btn">Đặt hàng</a>
+
+  <div id="fb-root"></div>
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "103385142857163");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({xfbml: true, version: 'v19.0'});
+    };
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+</html>
